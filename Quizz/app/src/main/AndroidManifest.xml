@@ -17,6 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".High_Score"/>
+        <activity android:name=".Manual"/>
+        <activity android:name=".Level"/>
     </application>
 
 </manifest>
