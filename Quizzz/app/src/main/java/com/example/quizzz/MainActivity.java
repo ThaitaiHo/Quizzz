@@ -29,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
         btnViewscore = findViewById(R.id.viewcode_btn);
         btnUsermanual = findViewById(R.id.manual_btn);
         btnExit = findViewById(R.id.exit_btn);
+=======
+        setContentView(R.layout.high_score);
+>>>>>>> Stashed changes
     }
 
     btnStart.setOnClickListener(new View.OnClickListener() {
