@@ -3,17 +3,9 @@ package com.example.quizzz;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.example.androidquizapp.Common.Common;
-import com.google.firebase.auth.FirebaseAuthException;
-import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,12 +14,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 645f568aa15d4d8e2344607caf5a24af89e90a43
         setContentView(R.layout.activity_main);
 
         btnStart = findViewById(R.id.play_btn);
         btnViewscore = findViewById(R.id.viewcode_btn);
         btnUsermanual = findViewById(R.id.manual_btn);
         btnExit = findViewById(R.id.exit_btn);
+<<<<<<< HEAD
 
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,4 +42,27 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+=======
+        /*
+        setContentView(R.layout.high_score);
+        // chuyen vo question setup
+        btnStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, LevelGame.class);
+                startActivity(intent);
+            }
+        });
+        */
+
+        //chuyen den trang high_score
+        btnViewscore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, High_Score.class);
+                startActivity(intent);
+            }
+        });
+    }
+>>>>>>> 645f568aa15d4d8e2344607caf5a24af89e90a43
 }
