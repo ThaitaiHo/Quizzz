@@ -9,6 +9,7 @@ import android.widget.Button;
 import androidx.annotation.Nullable;
 
 public class Level extends Activity {
+    Button easy, normal, hard, back;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

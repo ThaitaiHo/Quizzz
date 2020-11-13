@@ -19,6 +19,7 @@
         <activity android:name=".High_Score"/>
         <activity android:name=".Manual"/>
         <activity android:name=".Level"/>
+        <activity android:name=".Playing"/>
     </application>
 
 </manifest>
