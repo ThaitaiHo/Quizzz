@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import java.util.logging.Level;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override

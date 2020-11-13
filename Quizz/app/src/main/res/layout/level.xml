@@ -22,7 +22,7 @@
         tools:layout_marginBottom="150dp">
 
         <Button
-            android:id="@+id/aesy_btn"
+            android:id="@+id/easy_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="EASY"
