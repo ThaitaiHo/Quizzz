@@ -20,6 +20,9 @@
         <activity android:name=".Manual"/>
         <activity android:name=".Level"/>
         <activity android:name=".Playing"/>
+        <activity android:name=".Easy"/>
+        <activity android:name=".Normal"/>
+        <activity android:name=".Hard"/>
     </application>
 
 </manifest>
