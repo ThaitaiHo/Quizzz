@@ -22,26 +22,27 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-<<<<<<< Updated upstream
         setContentView(R.layout.activity_main);
 
         btnStart = findViewById(R.id.play_btn);
         btnViewscore = findViewById(R.id.viewcode_btn);
         btnUsermanual = findViewById(R.id.manual_btn);
         btnExit = findViewById(R.id.exit_btn);
-=======
-        setContentView(R.layout.high_score);
->>>>>>> Stashed changes
+
+        btnStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, QuestionSetup.class);
+                startActivity(intent);
+            }
+
+        });
+
+
+
     }
 
-    btnStart.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent intent = new Intent(Home.this, LevelGame.class);
-            startActivity(intent);
-        }
 
-    });
 
 
 }

@@ -4,9 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/christmashome"
-    android:orientation="vertical"
-    tools:context=".Home">
+    android:orientation="vertical">
 
 
     <LinearLayout
@@ -19,7 +17,6 @@
             android:layout_height="82dp"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:background="@drawable/theme"
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
             android:text="QUIZ APP"
@@ -32,7 +29,6 @@
             android:layout_gravity="center"
             android:layout_height="200dp"
             android:paddingTop="80dp"
-            android:background="@drawable/tablefour"
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
             android:text="Hahaha"
@@ -56,7 +52,6 @@
                 android:layout_marginLeft="125dp"
                 android:layout_marginTop="24dp"
                 android:layout_weight="1"
-                android:background="@drawable/custom_button"
                 android:text="PLAY"
                 android:textColor="#FF3030"
                 android:textSize="18sp" />
@@ -68,7 +63,6 @@
                 android:layout_marginLeft="125dp"
                 android:layout_marginTop="24dp"
                 android:layout_weight="1"
-                android:background="@drawable/custom_button"
                 android:text="VIEW SCORE"
                 android:textColor="#FF3030"
                 android:textSize="18sp" />
@@ -80,7 +74,6 @@
                 android:layout_marginLeft="125dp"
                 android:layout_marginTop="24dp"
                 android:layout_weight="1"
-                android:background="@drawable/custom_button"
                 android:text="TIPS ENGLISH"
                 android:textColor="#FF3030"
                 android:textSize="18sp" />
@@ -92,7 +85,6 @@
                 android:layout_marginLeft="125dp"
                 android:layout_marginTop="24dp"
                 android:layout_weight="1"
-                android:background="@drawable/custom_button"
                 android:text="EXIT"
                 android:textColor="#FF3030"
                 android:textSize="18sp" />
