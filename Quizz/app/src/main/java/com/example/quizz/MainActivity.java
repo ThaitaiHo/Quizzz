@@ -5,6 +5,7 @@ import androidx.core.content.res.ResourcesCompat;
 
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -12,16 +13,18 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
+/*
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
+ */
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView appName;
-    private FirebaseFirestore firestore;
+  //  private FirebaseFirestore firestore;
+    MediaPlayer player;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         manual = (Button)findViewById(R.id.manual_btn);
         exit = (Button)findViewById(R.id.exit_btn);
 
-        firestore = FirebaseFirestore.getInstance();
+//        firestore = FirebaseFirestore.getInstance();
 
 //        new Thread() {
 //            public void run() {
@@ -132,4 +135,37 @@ public class MainActivity extends AppCompatActivity {
 //        });
 //
 //    }
+public void play(View v) {
+    if (player == null) {
+        player = MediaPlayer.create(this, R.raw.song);
+        player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                stopPlayer();
+            }
+        });
+    }
+    player.start();
 }
+    public void pause(View v) {
+        if (player != null) {
+            player.pause();
+        }
+    }
+    public void stop(View v) {
+        stopPlayer();
+    }
+    private void stopPlayer() {
+        if (player != null) {
+            player.release();
+            player = null;
+            Toast.makeText(this, "MediaPlayer released", Toast.LENGTH_SHORT).show();
+        }
+    }
+    @Override
+    protected void onStop() {
+        super.onStop();
+        stopPlayer();
+    }
+}
+
