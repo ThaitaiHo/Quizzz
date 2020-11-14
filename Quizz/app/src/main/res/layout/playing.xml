@@ -22,7 +22,7 @@
         android:gravity="center" />
 
     <TextView
-        android:id="@+id/question_text"
+        android:id="@+id/question"
         android:layout_width="376dp"
         android:layout_height="202dp"
         android:layout_alignParentStart="true"
@@ -59,17 +59,17 @@
                 android:weightSum="2">
 
                 <TextView
-                    android:id="@+id/Score_txt"
+                    android:id="@+id/countdown"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
-                    android:text="Score: 0"
+                    android:text="Timer: 10"
                     android:textColor="#000"
                     android:textSize="25sp" />
 
                 <TextView
-                    android:id="@+id/question_total"
+                    android:id="@+id/quest_num"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

@@ -8,7 +8,13 @@ import android.widget.Button;
 
 import androidx.annotation.Nullable;
 
+import com.google.firebase.firestore.FirebaseFirestore;
+
 public class Level extends Activity {
+
+    private FirebaseFirestore firestore;
+
+
     Button easy, normal, hard, back;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -21,6 +27,8 @@ public class Level extends Activity {
         btnnormal = (Button)findViewById(R.id.normal_btn);
         btnhard = (Button)findViewById(R.id.hard_btn);
         btnback = (Button)findViewById(R.id.back_btn);
+
+        firestore = FirebaseFirestore.getInstance();
 
         btneasy.setOnClickListener(new View.OnClickListener() {
             @Override
