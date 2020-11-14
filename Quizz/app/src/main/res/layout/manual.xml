@@ -3,16 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/background1">
 
-    <TextView
+
+<TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
-        android:text="Manual"
-        android:textAlignment="center"
-        android:textSize="40dp" />
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="M A N U A L"
+        android:textColor="#000000"
+        android:textSize="50dp"  />
 
     <LinearLayout
         android:layout_width="match_parent"

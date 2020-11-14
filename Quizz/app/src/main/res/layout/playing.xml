@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Playing">
+    tools:context=".Playing"
+    android:background="@drawable/background1">
 
-    <ImageView
+
+<ImageView
         android:id="@+id/question_image"
         android:layout_width="300dp"
         android:layout_height="200dp"
